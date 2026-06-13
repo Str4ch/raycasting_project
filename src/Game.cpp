@@ -63,7 +63,7 @@ void drawing(RenderWindow& thiswindow, Player player) {
 		}
 		length *= cos(player.rotation*PI/180-ugol);
 		shape2.setSize(Vector2f((10000/length), 1.f));
-		sprite.setTextureRect(IntRect(int(hit),0,int(hit),1184));
+		sprite.setTextureRect(IntRect(int(hit),0,1,1184));
 		sprite.setScale(1.f,(10000/length)/1184);
 		shape2.setPosition(Vector2f(i*10+400,(600- 8000 / length + 1)/2));
 		sprite.setPosition(Vector2f(i*10+400,(600- 8000 / length + 1)/2));
